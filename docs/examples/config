@@ -10,6 +10,12 @@
 # Default values of this config are in comments        #
 ########################################################
 
+# Which user should dehydrated run as? This will be implictly enforced when running as root
+#DEHYDRATED_USER=
+
+# Which group should dehydrated run as? This will be implictly enforced when running as root
+#DEHYDRATED_GROUP=
+
 # Resolve names to addresses of IP version only. (curl)
 # supported values: 4, 6
 # default: <unset>
@@ -53,6 +59,9 @@
 
 # Path to openssl config file (default: <unset> - tries to figure out system default)
 #OPENSSL_CNF=
+
+# Path to OpenSSL binary (default: "openssl")
+#OPENSSL="openssl"
 
 # Extra options passed to the curl binary (default: <unset>)
 #CURL_OPTS=
@@ -101,3 +110,6 @@
 
 # Automatic cleanup (default: no)
 #AUTO_CLEANUP="no"
+
+# ACME API version (default: 1)
+#API=1
